@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.25)  8 APR 2012 23:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.3.25)  9 APR 2012 00:23
 entering extended mode
  %&-line parsing enabled.
 **Resume.tex
@@ -261,47 +261,46 @@ Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 24.
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
 ine 24.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--31
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
 
  []
 
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 43.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 41.
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 43.
+ine 41.
 
-Overfull \hbox (4.67867pt too wide) in paragraph at lines 44--46
+Overfull \hbox (4.67867pt too wide) in paragraph at lines 42--44
 \OT1/cmr/m/n/10 COURSEWORK 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 55.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 53.
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 55.
+ine 53.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 71.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 69.
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 71.
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 90.
+ine 69.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 88.
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 90.
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 100.
+ine 88.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 98.
+Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
+ine 98.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 108.
 
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 100.
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 110.
+ine 108.
 
-Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 110.
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
@@ -311,16 +310,16 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 121.
+Package parcolumns Info: Width of column 1 set to 70.46037pt on input line 119.
 
 Package parcolumns Info: Width of column 2 calculated as 379.29459pt on input l
-ine 121.
+ine 119.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 131.
+(Font)              <8> on input line 129.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 131.
+(Font)              <6> on input line 129.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 131.
+(Font)              <5> on input line 129.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./Resume.aux) ) 
