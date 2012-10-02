@@ -1,9 +1,9 @@
-\documentclass[a4paper,20pt]{article}
+\documentclass[a4paper]{article}
 
-\usepackage[total={6.5in,8.75in}, top=1.2in, left=0.8in]{geometry}
+\usepackage[total={6.5in,8.75in},top=1.2in,left=0.8in]{geometry}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
-\usepackage{parcolumns}
+\usepackage{tabularx}
 \listfiles
 
 \pagestyle{fancy}
@@ -19,113 +19,45 @@
   \href{mailto:abhinavkulkarni@gmail.com}{\nolinkurl{abhinavkulkarni@gmail.com}}; %
   \href{http://ics.uci.edu/~amkulkar}{WWW}%
 }
-\renewcommand{\headrulewidth}{0.4pt}
 
 \begin{document}
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  EDUCATION\\*
-  \\*
-  \\*
+\noindent
+\begin{tabularx}{\textwidth}{rX lX}
+  EDUCATION & \textbf{University of California, Irvine} \hfill 2011 - 2013 (Expected)\\
+  & Master of Science, Computer Science, 3.76/4.0\\
   [.5\baselineskip]
-  }
-  \colchunk[2]{%
-  \textbf{University of California, Irvine}\hfill 2011 - 2013 (Expected)\\*
-  Master of Science, Computer Science, 3.76/4.0\\*
-  [0.5\baselineskip]
-  \textbf{National Institute of Technology, Tiruchirapalli, India}\hfill 2005 - 2009\\*
-  Bachelor of Technology, Computer Science, 8.34/10.0
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  GRADUATE\\
-  COURSEWORK
-  }
-  \colchunk[2]{%
-  Machine Learning, Probabilitistic Learning, Probabilistic Graphical Models, Statistical Computing, Intermediate Statistics A \& B, Information Retreival, Principles of Data Management, Data Structures, Computer Architecture
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  WORK\\*
-  EXPERIENCE\\*
-  }
-  \colchunk[2]{%
-  \textbf{University of California, Irvine}\emph{, \href{http://www.ics.uci.edu/~lopes/}{Prof. Crista Lopes's} Research Grant}\hfill Irvine, U.S.\\*
-  \emph{Graduate Student Researcher}\hfill June 2012 - Current\\*
-  Study of evolution of open-source Java projects over time by identifying software aspects and concerns as latent topics using probabilitstic topic modelling (LDA). We studied how topic scattering across a release and source code files make-up in terms of topics change over multiple releases and identified outliying projects. Overall effort was a part of comparative study of Object and Aspect Oriented Programming paradigm.\\*
+  & \textbf{National Institute of Technology, Tiruchirapally, India} \hfill 2005 - 2009\\
+  & Bachelor of Science, Computer Science, 8.34/10.0\\
   \\*
-  \textbf{Microsoft Corporation}\emph{, Search Technology Center}\hfill Hyderabad, India\\*
-  \emph{Software Development Engineer}\hfill October 2009 - August 2011\\*
-  The focus was on improving relevance of algorithmic search overall as well as in specific segments by employing statistical methods to mine information from user click patterns from Internet Explorer and Microsoft Toolbar user click logs. My work on relevance of local search queries (containing locations) and offline computation of geo-specific popularity of websites resulted in new features incorporated in Bing search engine.
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  \noindent PROJECT\\*
-  WORK\\*
+  COURSES & Machine Learning, Probabilitistic Learning, Probabilistic Graphical Models, Intermediate Statistics A \& B, Statistical Methodology I \& II, Statistical Computing, Information Retreival, Principles of Data Management, Data Structures, Computer Architecture\\
   \\*
+  RESEARCH & \textbf{Master's Thesis:} Focus on Probabilistic Graphical Models \hfill UC Irvine\\
+  WORK & \textit{Advisor: \href{http://www.ics.uci.edu/~ihler}{Prof. Alexander Ihler}}\hfill April 2012 - Current\\
+  & Currently working on board evaluation strategies for the game of Go using probabilistic graphical models.\\
+  [.5\baselineskip]
+  & \textbf{University of California, Irvine}\textit{, \href{http://www.ics.uci.edu/~lopes/}{Prof. Crista Lopes's} Research Grant}\hfill UC, Irvine\\
+  & \textit{Graduate Student Researcher}\hfill June 2012 - Current\\
+  & Study of evolution of open-source Java projects over time by identifying software aspects and concerns as latent topics using probabilitstic topic modelling (LDA). We studied how topic scattering across a release and source code files make-up in terms of topics change over multiple releases and identified outliying projects. Overall effort was a part of comparative study of Object and Aspect Oriented Programming paradigm.\\
+  [.5\baselineskip]
+  WORK & \textbf{Microsoft Corporation}\textit{, Search Technology Center}\hfill Hyderabad, India\\
+  EXPERIENCE & \textit{Software Developement Engineer}\hfill October 2009 - August 2011\\
+  & The focus was on improving relevance of algorithmic search overall as well as in specific segments by employing statistical methods to mine information from user click patterns from Internet Explorer and Microsoft Toolbar user click logs. My work on relevance of local search queries (containing locations) and offline computation of geo-specific popularity of websites resulted in new features incorporated in Bing search engine.\\
   \\*
-  }
-  \colchunk[2]{%
-  \textbf{Master's Thesis:} Focus on Probabilistic Graphical Models \hfill UC Irvine\\*
-  \emph{Advisor: \href{http://www.ics.uci.edu/~ihler}{Prof. Alexander Ihler}}\hfill April 2012 - Current\\*
+  PROJECT & \textbf{Chemistry Corpus Analysis}\hfill Winter 2012, UC Irvine\\
+  WORK & We worked on the hypothesis that Chemistry is more closed in terms of collaboration among researchers than other Physical Sciences such as Physics and Mathematics. We analysed the graph of publication authors from reputed journals induced by co-authorship and affiliations and contrasted Chemistry with other Physical Sciences.\\
+  [.5\baselineskip]
+  & \textbf{Heritage Provider Network Health Prize}\hfill Fall 2011, UC Irvine\\
+  & Participated in \href{http://www.heritagehealthprize.com/c/hhp}{HHP Prize competition} hosted by \href{http://www.kaggle.com}{Kaggle}, a predictive modeling and analytics platform. Implemented machine learning algorithms to identify patients admitted to a hospital within next year using historical claims, drug and lab data.\\
   \\*
-  \textbf{Chemistry Corpus Analysis}\hfill Winter 2012, UC Irvine\\*
-  We worked on the hypothesis that Chemistry is more closed in terms of collaboration among researchers than other Physical Sciences such as Physics and Mathematics. We analysed the graph of authors of publications from reputed journals induced by co-authorship and affiliation relations and contrasted Chemistry with other Physical Sciences.\\*
+  SKILLS & \textbf{Languages: }C, C++, Java\\
+  & \textbf{Packages/Tools: }R, MATLAB, Eclipse, Visual Studio\\
   \\*
-  \textbf{Heritage Provider Network Health Prize}\hfill Fall 2011, UC Irvine\\*
-  Participated in \href{http://www.heritagehealthprize.com/c/hhp}{HHP Prize competition} hosted by popular data modeling and prediction platform \href{http://www.kaggle.com}{Kaggle}. Implemented machine learning algorithms to identify patients who will be admitted to a hospital within next year using historical claims, drug and lab data.
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  SKILLS
-  }
-  \colchunk[2]{%
-  \textbf{Languages: }C, C++, Java\\
-  \textbf{Packages/Tools: }R, MATLAB, Eclipse, Visual Studio
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  AWARDS
-  }
-  \colchunk[2]{%
-  Team mentioned in the special meritorious list of ACM ICPC 2008, South Asia Region.
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  LEADERSHIP\\*
-  }
-  \colchunk[2]{%
-  Marketing Head for Fine Arts Society of NIT Tiruchirapalli.\\*
-  Event Manager for CSurf ’09, the online programming contest conducted in Vortex ’09, the annual departmental symposium of CSE department of NIT Tiruchirapalli.
-  }
-\end{parcolumns}
-\vspace{0.8\baselineskip}
-
-\begin{parcolumns}[nofirstindent, colwidths={1=.15\linewidth}]{2}
-  \colchunk[1]{%
-  EXTRA\\*
-  CURRICULAR
-  }
-  \colchunk[2]{%
-  Winner of gold medal in swimming contests held in sports events of NIT Tiruchirapalli.\\*
-  Community service through National Service Scheme (NSS) involving forestation.
-  }
-\end{parcolumns}
+  AWARDS & Team mentioned in the special meritorious list of ACM ICPC 2008, South Asia Region.\\
+  \\*
+  LEADERSHIP & Marketing Head for Fine Arts Society of NIT Tiruchirapalli.\\
+  & Event Manager for CSurf ’09, the online programming contest conducted in Vortex ’09, the annual departmental symposium of CSE department of NIT Tiruchirapalli.\\
+  \\*
+  EXTRA & Winner of gold medal in swimming contests held in sports events of NIT Tiruchirapalli.\\
+  CURRICULAR & Community service through National Service Scheme (NSS) involving forestation.
+\end{tabularx}
 \end{document}
