@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
 
-\usepackage[total={6.6in,9.3in},top=1.1in,left=0.9in]{geometry}
+\usepackage[total={7in,9.3in},top=1.1in,left=.5in]{geometry}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
@@ -8,18 +8,27 @@
 \usepackage[T1]{fontenc}
 \usepackage{tgpagella}
 \usepackage{textcomp}
-
+\usepackage{enumitem}
 
 \pagestyle{fancy}
 % Remove page numbers
 \fancyfoot{}
+
+\makeatletter
+\newcommand\novspace{\@minipagetrue}
+\makeatother
+\newcolumntype{Y}{>{\novspace}X}
+
+\newenvironment{noindlist}
+ {\begin{list}{\labelitemi}{\leftmargin=.8em \itemindent=0em \topsep=-5em \itemsep=-4pt \labelsep=3pt \parskip=0em \partopsep=0em}}
+ {\end{list}}
 
 \setlength{\headheight}{52pt}
 \chead{%
   \fontsize{20.74pt}{24pt}\selectfont{}%
   Abhinav Mukund Kulkarni\\%
   \fontsize{8pt}{9.6pt}\selectfont{}%
-  \oldstylenums{3900 30}C, Parkview Lane, Irvine, CA, \oldstylenums{92612}, United States; \oldstylenums{512 658 7456}; %
+  \oldstylenums{3801 16}C, Parkview Lane, Irvine, CA, \oldstylenums{92612}, United States; \oldstylenums{512 658 7456}; %
   \href{mailto:abhinavkulkarni@gmail.com}{\nolinkurl{abhinavkulkarni@gmail.com}}; %
   \href{http://ics.uci.edu/~amkulkar}{WWW}%
 }
@@ -29,53 +38,71 @@
 \begin{document}
 \noindent
 \renewcommand\multirowsetup{\raggedleft}
-\begin{tabularx}{\textwidth}{rX lX}
+\begin{tabularx}{\textwidth}{rY lX}
   EDUCATION & \textbf{University of California, Irvine} \hfill\oldstylenums{2011 = 2013} (Expected)\\
   & Master of Science, Computer Science, \oldstylenums{3.77/4.0}\\
   [.4\baselineskip]
   & \textbf{National Institute of Technology, Tiruchirapally, India} \hfill\oldstylenums{2005 = 2009}\\
   & Bachelor of Science, Computer Science, \oldstylenums{8.34/10.0}\\
- \\*
+  [.5\baselineskip]
   \multirow{2}{2.5cm}{GRADUATE\\COURSEWORK} & \begin{tabular}[t]{ @{}l l l@{} }
    Machine Learning & Probabilistic Learning & Probabilistic Graphical Models \\
    Statistical Computing & Intermediate Statistics I \& II & Statistical Methodology I \& II\\
    Bayesian Statistics & Information Retrieval & Principles of Data Management\\
    Data Structures & Computer Architecture\\
   \end{tabular}\\
-  \\*
-  \multirow{2}{2.5cm}{RESEARCH\\WORK} & \textbf{Master's Thesis:} Focus on Probabilistic Graphical Models \hfill UC Irvine\\
+  \\[-1mm]
+  \multirow{2}{2.5cm}{RESEARCH\\WORK} & \textbf{Master's Thesis:} Board Evaluation Strategies for the Game of Go \hfill UC Irvine\\
   &  \textit{Advisor: \href{http://www.ics.uci.edu/~ihler}{Prof. Alexander Ihler}}\hfill April \oldstylenums{2012 =} Current\\
-  & Currently working on board evaluation strategies for the game of Go using probabilistic graphical models.\\
-  [.5\baselineskip]
-  & \textbf{Analysis of Open Source Java Projects}\hfill UC, Irvine\\
+  & 
+  \begin{noindlist}
+    \item Modeling Go board using grid-based Graphical Models.
+    \item Designing efficient board evaluation and territory prediction algorithms that use local patterns and couplings between adjacent stones.
+  \end{noindlist}\\[-1mm]
+  & \textbf{Analysis of Open Source Java Projects}\hfill UC Irvine\\
   & \textit{Graduate Student Researcher, \href{http://www.ics.uci.edu/~lopes/}{Prof. Crista Lopes's} Research Grant}\hfill June - December \oldstylenums{2012}\\
-  & \href{https://github.com/abhinavkulkarni/topic-modelling}{\nolinkurl{https://github.com/abhinavkulkarni/topic-modelling}}
-  
-  Topic modelling (LDA) analysis of open source Java projects to characterize their software development processes. Using LDA we identified cohesive areas of functionalities such as logging or network I/O in the source code. We drew project-wide statistics such as cross-cutting of these functionalities to characterize the development of a project.\\
-  [.5\baselineskip]
+  & \href{https://github.com/abhinavkulkarni/topic-modeling}{\nolinkurl{https://github.com/abhinavkulkarni/topic-modeling}}\\
+  &
+  \begin{noindlist}
+    \item Topic modeling (LDA) of open-source Java projects to identify cross-cutting concerns.
+    \item Characterization of development curve of projects in terms of complexity of projects measured by amount of cross-cutting between concerns.
+  \end{noindlist}\\[-1mm]
   \multirow{2}{2.5cm}{WORK\\EXPERIENCE} & \textbf{Microsoft Corporation}\textit{, Search Technology Center}\hfill Hyderabad, India\\
   & \textit{Software Developement Engineer}\hfill October \oldstylenums{2009 = } August \oldstylenums{2011}\\
-  & The focus was on improving relevance of algorithmic search overall as well as in specific segments by employing statistical methods to mine information from user click patterns from Internet Explorer and Microsoft Toolbar user click logs. My work on relevance of local search queries (containing locations) and offline computation of geo-specific popularity of websites resulted in new features incorporated in Bing search engine.\\
-  [.5\baselineskip]
-  & \textbf{Teaching Assistant}\hfill Winter \oldstylenums{2013}, UC Irvine\\
-  & Conducted lab sessions for Python programming course and assisted students with projects in User Interaction Software course.\\
-  \\*
-  \multirow{2}{2.5cm}{PROJECT\\WORK} & \textbf{Chemistry Corpus Analysis}\hfill Winter \oldstylenums{2012}, UC Irvine\\
-  & We worked on the hypothesis that Chemistry is more closed in terms of collaboration among researchers than other Physical Sciences such as Physics and Mathematics. We analysed the graph of publication authors from reputed journals induced by co-authorship and affiliations and contrasted Chemistry with other Physical Sciences.\\
-  [.5\baselineskip]
+  &
+  \begin{noindlist}
+    \item Improved relevance of search queries in specific segments by mining user click patterns from Internet Explorer and Microsoft Toolbar logs.
+    \item Incorporated offline-computed geospecific popularity of websites in search engine ranking model.
+    \item Contributed to improving relevance of location queries by mining data from local sites.
+  \end{noindlist}\\[-1mm]
+  \multirow{2}{2.5cm}{PROJECT\\WORK} & \textbf{Chemistry Publication Corpus Analysis}\hfill Winter \oldstylenums{2012}, UC Irvine\\
+  &
+  \begin{noindlist}
+    \item Worked on the hypothesis that Chemistry is more closed in terms of collaboration among researchers than other Physical Sciences such as Physics and Mathematics.
+    \item Analysed the graph of authors of publications from reputed journals induced by co-authorship and affiliations and contrasted Chemistry with other Physical Sciences.
+  \end{noindlist}\\[-1mm]
   & \textbf{Heritage Provider Network Health Prize}\hfill Fall \oldstylenums{2011}, UC Irvine\\
-
-  & Participated in \href{http://www.heritagehealthprize.com/c/hhp}{HHP Prize competition} hosted by \href{http://www.kaggle.com}{Kaggle}, a predictive modeling and analytics platform. Implemented machine learning algorithms to identify patients admitted to a hospital within next year using historical claims, drug and lab data.\\
-  \\*
+  &
+  \begin{noindlist}
+    \item Participated in \href{http://www.heritagehealthprize.com/c/hhp}{HHP Prize competition} hosted by \href{http://www.kaggle.com}{Kaggle}, a predictive modeling and analytics platform.
+    \item Implemented machine learning algorithms to identify potential patients to be admitted to a hospital within next year using historical claims, drug and lab data.
+  \end{noindlist}\\[-1mm]
+  \multirow{2}{2.5cm}{TEACHING\\EXPERIENCE} & \textbf{Teaching Assistant}\hfill Winter \oldstylenums{2013}, UC Irvine\\
+  &
+  \begin{noindlist}
+    \item Conducted lab sessions for Python programming course.
+    \item Assisted students in projects in User Interaction Software course.
+  \end{noindlist}\\[-1mm]
   SKILLS & \textbf{Languages: }C, \CPP, Java (Intermediate), R, MATLAB\\
   & \textbf{Packages/Tools: }Eclipse, Visual Studio\\
   & \textbf{Technologies: }Apache Hadoop (Intermediate)\\
-  \\*
+  [.5\baselineskip]
   AWARDS & Team mentioned in the special meritorious list of ACM ICPC \oldstylenums{2008}, South Asia Region.\\
-  \\*
+  [.5\baselineskip]
   LEADERSHIP & Marketing Head for Fine Arts Society of NIT Tiruchirapalli.\\
+  [.4\baselineskip]
   & Event Manager for CSurf '\oldstylenums{09}, the online programming contest conducted in Vortex '\oldstylenums{09}, the annual departmental symposium of CSE department of NIT Tiruchirapalli.\\
-  \\*
+  [.5\baselineskip]
   \multirow{2}{2.5cm}{EXTRA\\CURRICULAR} & Winner of gold medal in swimming contests held in sports events of NIT Tiruchirapalli.\\
   & Community service through National Service Scheme (NSS) involving forestation.
 \end{tabularx}
